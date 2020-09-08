@@ -41,8 +41,8 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
 
         button = [
-            [InlineKeyboardButton(text = 'Support Chat', url = "https://t.me/vipercommunity")],
-            [InlineKeyboardButton(text = 'Feature Request', url = "https://t.me/viperadnanbot")],
+            [InlineKeyboardButton(text = 'Support Channel', url = "https://t.me/S4Hchannel")],
+            [InlineKeyboardButton(text = 'Supported Chat', url = "https://t.me/S4HTeam")],
             [InlineKeyboardButton(text = '<--', callback_data = f"help+{pos-1}")]
 
         ]
