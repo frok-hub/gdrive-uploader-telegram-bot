@@ -44,7 +44,7 @@ async def _start(client, message):
         parent_id=parent_id,
         message=sent_message)
   if file_id not in ('error', 'LimitExceeded'):
-    await sent_message.edit("✅ **Uploaded Successfully.**\n<a href='https://drive.google.com/open?id={}'>{}</a> __({})__".format(file_id, file_name, filesize))
+    await sent_message.edit("✅ **Uploaded Successfully.**\n<a href='https://drive.google.com/open?id={}'>{}</a> __({})__ © @s4hchannel".format(file_id, file_name, filesize))
   elif file_id == 'LimitExceeded':
     await sent_message.edit('❗ **Upload limit exceeded**\n__Try after 24 hours__')
   else:
