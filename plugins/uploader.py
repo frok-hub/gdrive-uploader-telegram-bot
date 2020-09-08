@@ -32,7 +32,7 @@ async def upload_file(creds, file_path, filesize, parent_id, message):
     await message.edit(f'📤 **Uploading...**\n**Filename:** ```{file_name}```\n**Size:** ```{filesize}```')
     body = {
         "name": file_name,
-        "description": "Uploaded using @UploadGdriveBot",
+        "description": "Uploaded using @s4h_gdriveitbot",
         "mimeType": mime_type,
     }
     if parent_id:
