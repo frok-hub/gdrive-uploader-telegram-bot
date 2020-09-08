@@ -105,7 +105,7 @@ async def _copy(client, message):
       await sent_message.edit('❗ **Invalid Google Drive URL**\n__Only Google Drive links can be copied.__')
       return
     else:
-      await sent_message.edit(f'🗂️ **Cloning to Google Drive...**\n__{file_id}__')
+      await sent_message.edit(f'🗂️ **Cloning to Google Drive...**\n__{file_id}__ © @s4hchannel')
     service = build(
         "drive",
         "v3",
@@ -137,4 +137,4 @@ async def _copy(client, message):
       except Exception as e:
          await sent_message.edit(f'**ERROR:** ```{e}```')
   else:
-    await message.reply_text('**Copy Google Drive Files or Folder**\n__Copy GDrive Files/Folder to your Google Drive Account. Use__ ```/copy {GDriveFolderURL/FileURL}``` __for copying.__')
+    await message.reply_text('**Copy Google Drive Files or Folder**\n__Copy GDrive Files/Folder to your Google Drive Account. Use__ ```/copy {GDriveFolderURL/FileURL}``` __for copying.__ © @s4hchannel')
